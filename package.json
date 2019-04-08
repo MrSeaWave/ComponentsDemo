@@ -1,0 +1,27 @@
+{
+  "name": "domponents-demo",
+  "version": "1.0.0",
+  "description": "组件demo",
+  "main": "index.js",
+  "scripts": {
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
+    "react-lint": "cd web-components-demo  && npm run lint"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "react-lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrSeaWave/ComponentsDemo.git"
+  },
+  "author": "MrSeaWave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrSeaWave/ComponentsDemo/issues"
+  },
+  "homepage": "https://github.com/MrSeaWave/ComponentsDemo#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
+}
